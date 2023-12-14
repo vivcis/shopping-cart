@@ -68,3 +68,58 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+# Shopping Cart Application
+
+This shopping cart application allows users to manage items in a cart, apply discounts, and persist the cart data. Users can view a list of products, add items to the cart, adjust quantities, and remove items. Additionally, it supports a discount feature using a coupon code.
+
+## Getting Started
+
+To run the shopping cart application locally, follow these steps:
+
+### Prerequisites
+
+- Node.js installed on your machine
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/shopping-cart.git
+
+Navigate to the project directory:
+   ```bash
+   cd shopping-cart
+   ```
+Install dependencies:
+   ```bash
+   npm install
+   ```
+   or
+   ```bash
+   yarn install
+   ```
+Start the development server:
+    ```bash
+    npm start
+    ```
+    or
+    ```bash
+    yarn start
+    ```
+2. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+### Functionality
+## Product List
+The home page displays a list of available products.
+Click the "Add to Cart" button to add a product to the cart.
+## Shopping Cart
+Navigate to the /cart route to view the shopping cart.
+Increase or decrease the quantity of items in the cart using the respective buttons.
+Remove items from the cart using the "Remove" button.
+## Discounts
+Apply a discount by entering a valid coupon code (e.g., WEB3BRIDGECOHORTx) in the coupon input field and clicking "Apply Coupon."
+A 10% discount will be applied if the coupon code is valid.
