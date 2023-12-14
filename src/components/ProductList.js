@@ -10,7 +10,7 @@ const ProductList = ({ products, addToCart }) => {
         setNotification(`Added ${products.find(product => product.id === productId).name} to the cart`);
         setTimeout(() => {
             setNotification(null);
-        }, 3000); // Clear notification after 3 seconds
+        }, 10000);
     };
 
     return (
