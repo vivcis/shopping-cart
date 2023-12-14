@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../assets/ProductList.css';
 
 const ProductList = ({ products, addToCart }) => {
+    const [notification, setNotification] = useState(null);
+
     const handleAddToCart = (productId) => {
-        addToCart(productId); // Trigger the addToCart function when "Add to Cart" button is clicked
+        addToCart(productId);
+        console.log(`Adding product with ID ${productId} to the cart`);
+        setNotification(`Added ${products.find(product => product.id === productId).name} to the cart`);
+        setTimeout(() => {
+            setNotification(null);
+        }, 3000); // Clear notification after 3 seconds
     };
 
     return (
@@ -17,6 +24,7 @@ const ProductList = ({ products, addToCart }) => {
                     </li>
                 ))}
             </ul>
+            {notification && <div className="notification">{notification}</div>}
         </div>
     );
 };
